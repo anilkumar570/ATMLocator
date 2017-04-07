@@ -8,16 +8,7 @@
     
 			<form name="f" th:action="@{/login}" method="post" class="form-signin">
 			    <h2 class="form-signin-heading">Please sign in</h2>
-			    <div class="alert alert-info" role="alert">
 			    
-			    Enter any credentials - the route simply builds a user from what you enter - except for:
-			    <ul>
-				    <li>admin/admin to get the Administrator role</li>
-				    <li>error/error to fail authentication</li>
-				    <li>extra/extra for a user with an extra role</li>
-			    </ul>
-			    
-			    </div>
 			    
 	            <div th:if="${loginError}" class="alert alert-danger">    
 	                Invalid username and password.
