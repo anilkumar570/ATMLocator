@@ -1,0 +1,966 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.ing.meta.annotation.AuthoriseTest" time="0" tests="3" errors="3" skipped="0" failures="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_121\jre\bin"/>
+    <property name="java.vm.version" value="25.121-b13"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value="Service Pack 1"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="C:\Users\normsby\Documents\NetBeansProjects\ING_ATM_Locator"/>
+    <property name="java.runtime.version" value="1.8.0_121-b13"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jdk1.8.0_121\jre\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\normsby\AppData\Local\Temp\"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 7"/>
+    <property name="maven.ext.class.path" value="C:\Program Files\NetBeans 8.2\java\maven-nblib\netbeans-eventspy.jar"/>
+    <property name="classworlds.conf" value="C:\Program Files\NetBeans 8.2\java\maven\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_121\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files (x86)\Google\Chrome\Application;C:\ProgramData\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files (x86)\Windows Kits\8.1\Windows Performance Toolkit\;C:\Program Files\Microsoft SQL Server\120\Tools\Binn\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Program Files\Git\cmd;C:\Program Files\MongoDB\Server\3.2\bin;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\phantomjs\bin;C:\Program Files\SQL Anywhere 16\bin64;C:\Program Files\SQL Anywhere 16\bin32;C:\Windows\Microsoft.NET\Framework\v4.0.30319;C:\Program Files\dotnet\;C:\Users\normsby\AppData\Local\Programs\Python\Python35-32\Scripts;C:\Android\platform-tools ;C:\Program Files\TortoiseGit\bin;C:\Program Files\nodejs\;C:\Program Files (x86)\Skype\Phone\;C:\Program Files\Apache\maven\bin;C:\Program Files (x86)\Microsoft VS Code\bin;C:\Users\normsby\AppData\Roaming\np;C:\adb;C:\Program Files (x86)\Microsoft VS Code\bin;C:\Users\normsby\AppData\Roaming\npm;."/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="6.1"/>
+    <property name="user.home" value="C:\Users\normsby"/>
+    <property name="user.timezone" value="America/New_York"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="user.name" value="normsby"/>
+    <property name="java.class.path" value="C:\Program Files\NetBeans 8.2\java\maven\boot\plexus-classworlds-2.4.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk1.8.0_121\jre"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -Dmaven.ext.class.path=C:\Program Files\NetBeans 8.2\java\maven-nblib\netbeans-eventspy.jar -Dfile.encoding=UTF-8 clean install"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_121"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jdk1.8.0_121\jre\lib\ext;C:\Windows\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jdk1.8.0_121\jre\lib\resources.jar;C:\Program Files\Java\jdk1.8.0_121\jre\lib\rt.jar;C:\Program Files\Java\jdk1.8.0_121\jre\lib\sunrsasign.jar;C:\Program Files\Java\jdk1.8.0_121\jre\lib\jsse.jar;C:\Program Files\Java\jdk1.8.0_121\jre\lib\jce.jar;C:\Program Files\Java\jdk1.8.0_121\jre\lib\charsets.jar;C:\Program Files\Java\jdk1.8.0_121\jre\lib\jfr.jar;C:\Program Files\Java\jdk1.8.0_121\jre\classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="C:\Program Files\NetBeans 8.2\java\maven"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase name="whenNoUser_thenExtraRole_resultFalse" classname="com.ing.meta.annotation.AuthoriseTest" time="0">
+    <error message="Failed to load ApplicationContext" type="java.lang.IllegalStateException">java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.apache.camel.util.CamelContextHelper.getMandatoryEndpoint(CamelContextHelper.java:81)
+	at org.apache.camel.model.RouteDefinition.resolveEndpoint(RouteDefinition.java:211)
+	at org.apache.camel.impl.DefaultRouteContext.resolveEndpoint(DefaultRouteContext.java:107)
+	at org.apache.camel.impl.DefaultRouteContext.resolveEndpoint(DefaultRouteContext.java:113)
+	at org.apache.camel.model.SendDefinition.resolveEndpoint(SendDefinition.java:62)
+	at org.apache.camel.model.SendDefinition.createProcessor(SendDefinition.java:56)
+	at org.apache.camel.model.ProcessorDefinition.createProcessor(ProcessorDefinition.java:483)
+	at org.apache.camel.model.ProcessorDefinition.createOutputsProcessorImpl(ProcessorDefinition.java:446)
+	at org.apache.camel.model.ProcessorDefinition.createOutputsProcessor(ProcessorDefinition.java:413)
+	at org.apache.camel.model.ProcessorDefinition.createOutputsProcessor(ProcessorDefinition.java:165)
+	at org.apache.camel.model.ExpressionNode.createFilterProcessor(ExpressionNode.java:109)
+	at org.apache.camel.model.WhenDefinition.createProcessor(WhenDefinition.java:74)
+	at org.apache.camel.model.WhenDefinition.createProcessor(WhenDefinition.java:32)
+	at org.apache.camel.model.ProcessorDefinition.createProcessor(ProcessorDefinition.java:483)
+	at org.apache.camel.model.ChoiceDefinition.createProcessor(ChoiceDefinition.java:135)
+	at org.apache.camel.model.ProcessorDefinition.makeProcessorImpl(ProcessorDefinition.java:534)
+	at org.apache.camel.model.ProcessorDefinition.makeProcessor(ProcessorDefinition.java:495)
+	at org.apache.camel.model.ProcessorDefinition.addRoutes(ProcessorDefinition.java:219)
+	at org.apache.camel.model.RouteDefinition.addRoutes(RouteDefinition.java:1069)
+	at org.apache.camel.model.RouteDefinition.addRoutes(RouteDefinition.java:196)
+	at org.apache.camel.impl.DefaultCamelContext.startRoute(DefaultCamelContext.java:974)
+	at org.apache.camel.impl.DefaultCamelContext.startRouteDefinitions(DefaultCamelContext.java:3301)
+	at org.apache.camel.impl.DefaultCamelContext.doStartCamel(DefaultCamelContext.java:3024)
+	at org.apache.camel.impl.DefaultCamelContext.access$000(DefaultCamelContext.java:175)
+	at org.apache.camel.impl.DefaultCamelContext$2.call(DefaultCamelContext.java:2854)
+	at org.apache.camel.impl.DefaultCamelContext$2.call(DefaultCamelContext.java:2850)
+	at org.apache.camel.impl.DefaultCamelContext.doWithDefinedClassLoader(DefaultCamelContext.java:2873)
+	at org.apache.camel.impl.DefaultCamelContext.doStart(DefaultCamelContext.java:2850)
+	at org.apache.camel.support.ServiceSupport.start(ServiceSupport.java:61)
+	at org.apache.camel.impl.DefaultCamelContext.start(DefaultCamelContext.java:2819)
+	at org.apache.camel.spring.boot.RoutesCollector.onApplicationEvent(RoutesCollector.java:116)
+	at org.apache.camel.spring.boot.RoutesCollector.onApplicationEvent(RoutesCollector.java:41)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:166)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:138)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:383)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:337)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:882)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:545)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:766)
+	at org.springframework.boot.SpringApplication.createAndRefreshContext(SpringApplication.java:361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.test.SpringApplicationContextLoader.loadContext(SpringApplicationContextLoader.java:98)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:98)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:116)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:83)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:189)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:131)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:230)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:228)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:287)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:289)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:247)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray2(ReflectionUtils.java:208)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:159)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:87)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:95)
+</error>
+    <system-out><![CDATA[2017-04-10 19:13:50.027  INFO 8220 --- [           main] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.ing.meta.annotation.AuthoriseTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2017-04-10 19:13:50.027  INFO 8220 --- [           main] o.s.t.c.web.WebTestContextBootstrapper   : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener]
+2017-04-10 19:13:50.027  INFO 8220 --- [           main] o.s.t.c.web.WebTestContextBootstrapper   : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@8228ad6, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@38d314e8, org.springframework.test.context.support.DependencyInjectionTestExecutionListener@37e27742, org.springframework.test.context.support.DirtiesContextTestExecutionListener@581ee586, org.springframework.test.context.transaction.TransactionalTestExecutionListener@4476a069, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@64a2885b, org.springframework.security.test.context.support.WithSecurityContextTestExecutionListener@40deabea]
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.3.3.RELEASE)
+
+2017-04-10 19:13:50.067  INFO 8220 --- [           main] com.ing.meta.annotation.AuthoriseTest    : Starting AuthoriseTest on PPL882039FC with PID 8220 (C:\Users\normsby\Documents\NetBeansProjects\ING_ATM_Locator\target\test-classes started by normsby in C:\Users\normsby\Documents\NetBeansProjects\ING_ATM_Locator)
+2017-04-10 19:13:50.067  INFO 8220 --- [           main] com.ing.meta.annotation.AuthoriseTest    : No active profile set, falling back to default profiles: default
+2017-04-10 19:13:50.067  INFO 8220 --- [           main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@27aa4f3c: startup date [Mon Apr 10 19:13:50 EDT 2017]; root of context hierarchy
+2017-04-10 19:13:50.459  INFO 8220 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [class org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration$$EnhancerBySpringCGLIB$$da46e5e5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-10 19:13:50.459  INFO 8220 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'objectPostProcessor' of type [class org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-10 19:13:50.459  INFO 8220 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@4d99f5b8' of type [class org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-10 19:13:50.459  INFO 8220 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [class org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration$$EnhancerBySpringCGLIB$$ff1b8897] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-10 19:13:50.459  INFO 8220 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [class org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-10 19:13:50.469  INFO 8220 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.apache.camel.spring.boot.CamelAutoConfiguration' of type [class org.apache.camel.spring.boot.CamelAutoConfiguration$$EnhancerBySpringCGLIB$$63c2e3ca] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-10 19:13:50.819  INFO 8220 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1ef79346, org.springframework.security.web.context.SecurityContextPersistenceFilter@101db1d3, org.springframework.security.web.header.HeaderWriterFilter@1bd98e53, org.springframework.security.web.csrf.CsrfFilter@1750c17f, org.springframework.security.web.authentication.logout.LogoutFilter@78ac03a9, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@5975da2e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@10a54597, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@47d9fac6, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4cb40e47, org.springframework.security.web.session.SessionManagementFilter@157d3bf, org.springframework.security.web.access.ExceptionTranslationFilter@40880609, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@9995b5b]
+2017-04-10 19:13:50.901  INFO 8220 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@27aa4f3c: startup date [Mon Apr 10 19:13:50 EDT 2017]; root of context hierarchy
+2017-04-10 19:13:50.921  INFO 8220 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public java.lang.String com.ing.error.CustomErrorController.customError(org.springframework.ui.Model,javax.servlet.http.HttpServletRequest)
+2017-04-10 19:13:50.921  INFO 8220 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/403]}" onto public java.lang.String com.ing.error.CustomErrorController.unauthorised(org.springframework.ui.Model,javax.servlet.http.HttpServletRequest)
+2017-04-10 19:13:50.921  INFO 8220 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/index],methods=[GET]}" onto public java.lang.String com.ing.web.MainController.index()
+2017-04-10 19:13:50.921  INFO 8220 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/],methods=[GET]}" onto public java.lang.String com.ing.web.MainController.root()
+2017-04-10 19:13:50.921  INFO 8220 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/login-error],methods=[GET]}" onto public java.lang.String com.ing.web.MainController.loginError(org.springframework.ui.Model)
+2017-04-10 19:13:50.921  INFO 8220 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/login],methods=[GET]}" onto public java.lang.String com.ing.web.MainController.login()
+2017-04-10 19:13:50.921  INFO 8220 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/index],methods=[GET]}" onto public java.lang.String com.ing.web.MainController.adminIndex()
+2017-04-10 19:13:50.921  INFO 8220 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/index],methods=[GET]}" onto public java.lang.String com.ing.web.MainController.userIndex()
+2017-04-10 19:13:50.921  INFO 8220 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/public/index],methods=[GET]}" onto public java.lang.String com.ing.web.MainController.publicIndex()
+2017-04-10 19:13:50.921  INFO 8220 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/extra/index],methods=[GET]}" onto public java.lang.String com.ing.web.MainController.extraIndex()
+2017-04-10 19:13:50.931  INFO 8220 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/tags/index],methods=[GET]}" onto public java.lang.String com.ing.web.SecurityTagController.index(org.springframework.security.core.userdetails.User)
+2017-04-10 19:13:50.931  INFO 8220 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/tags/admin/index],methods=[GET]}" onto public java.lang.String com.ing.web.SecurityTagController.adminIndex(org.springframework.security.core.userdetails.User)
+2017-04-10 19:13:50.931  INFO 8220 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/tags/extra/index],methods=[GET]}" onto public java.lang.String com.ing.web.SecurityTagController.extraUser(org.springframework.security.core.userdetails.User)
+2017-04-10 19:13:50.931  INFO 8220 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/tags/user/index],methods=[GET]}" onto public java.lang.String com.ing.web.SecurityTagController.userIndex(org.springframework.security.core.userdetails.User)
+2017-04-10 19:13:51.011  INFO 8220 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-04-10 19:13:51.011  INFO 8220 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-04-10 19:13:51.041  INFO 8220 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-04-10 19:13:51.141  INFO 8220 --- [           main] o.a.c.i.converter.DefaultTypeConverter   : Loaded 191 type converters
+2017-04-10 19:13:51.251  INFO 8220 --- [           main] o.a.camel.spring.boot.RoutesCollector    : Loading additional Camel XML routes from: classpath:camel/*.xml
+2017-04-10 19:13:51.251  INFO 8220 --- [           main] o.a.camel.spring.boot.RoutesCollector    : Loading additional Camel XML rests from: classpath:camel-rest/*.xml
+2017-04-10 19:13:51.251  INFO 8220 --- [           main] o.a.camel.spring.SpringCamelContext      : Apache Camel 2.17.2 (CamelContext: camel-38) is starting
+2017-04-10 19:13:51.251  INFO 8220 --- [           main] o.a.c.m.ManagedManagementStrategy        : JMX is enabled
+2017-04-10 19:13:51.251  INFO 8220 --- [           main] o.a.c.i.DefaultRuntimeEndpointRegistry   : Runtime endpoint registry is in extended mode gathering usage statistics of all incoming and outgoing endpoints (cache limit: 1000)
+2017-04-10 19:13:51.281  INFO 8220 --- [           main] o.a.camel.spring.SpringCamelContext      : Apache Camel 2.17.2 (CamelContext: camel-38) is shutting down
+2017-04-10 19:13:51.281  INFO 8220 --- [           main] o.a.camel.spring.SpringCamelContext      : Apache Camel 2.17.2 (CamelContext: camel-38) uptime 0.030 seconds
+2017-04-10 19:13:51.281  INFO 8220 --- [           main] o.a.camel.spring.SpringCamelContext      : Apache Camel 2.17.2 (CamelContext: camel-38) is shutdown in 0.000 seconds
+2017-04-10 19:13:51.281 ERROR 8220 --- [           main] o.s.boot.SpringApplication               : Application startup failed
+
+org.apache.camel.spring.boot.CamelSpringBootInitializationException: org.apache.camel.FailedToCreateRouteException: Failed to create route route114 at: >>> Choice[[When[{header{action} == all} -> [To[GetAllATMs]]], When[{header{action} == inCity} -> [To[GetAllATMsInCity]]]]] <<< in route: Route(route114)[[From[direct:call]] -> [SetBody[{null}], Cho... because of No endpoint could be found for: GetAllATMs, please check your classpath contains the needed Camel component jar.
+	at org.apache.camel.spring.boot.RoutesCollector.onApplicationEvent(RoutesCollector.java:126) ~[camel-spring-boot-2.17.0.jar:2.17.0]
+	at org.apache.camel.spring.boot.RoutesCollector.onApplicationEvent(RoutesCollector.java:41) ~[camel-spring-boot-2.17.0.jar:2.17.0]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:166) ~[spring-context-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:138) ~[spring-context-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:383) ~[spring-context-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:337) ~[spring-context-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:882) ~[spring-context-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:545) ~[spring-context-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:766) ~[spring-boot-1.3.3.RELEASE.jar:1.3.3.RELEASE]
+	at org.springframework.boot.SpringApplication.createAndRefreshContext(SpringApplication.java:361) ~[spring-boot-1.3.3.RELEASE.jar:1.3.3.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) ~[spring-boot-1.3.3.RELEASE.jar:1.3.3.RELEASE]
+	at org.springframework.boot.test.SpringApplicationContextLoader.loadContext(SpringApplicationContextLoader.java:98) [spring-boot-1.3.3.RELEASE.jar:1.3.3.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:98) [spring-test-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:116) [spring-test-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:83) [spring-test-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:189) [spring-test-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:131) [spring-test-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:230) [spring-test-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:228) [spring-test-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:287) [spring-test-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:289) [spring-test-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:247) [spring-test-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94) [spring-test-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) [spring-test-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) [spring-test-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191) [spring-test-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264) [surefire-junit4-2.14.1.jar:2.14.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153) [surefire-junit4-2.14.1.jar:2.14.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124) [surefire-junit4-2.14.1.jar:2.14.1]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_121]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_121]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_121]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_121]
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray2(ReflectionUtils.java:208) [surefire-api-2.14.1.jar:2.14.1]
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:159) [surefire-booter-2.14.1.jar:2.14.1]
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:87) [surefire-booter-2.14.1.jar:2.14.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153) [surefire-booter-2.14.1.jar:2.14.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:95) [surefire-booter-2.14.1.jar:2.14.1]
+Caused by: org.apache.camel.FailedToCreateRouteException: Failed to create route route114 at: >>> Choice[[When[{header{action} == all} -> [To[GetAllATMs]]], When[{header{action} == inCity} -> [To[GetAllATMsInCity]]]]] <<< in route: Route(route114)[[From[direct:call]] -> [SetBody[{null}], Cho... because of No endpoint could be found for: GetAllATMs, please check your classpath contains the needed Camel component jar.
+	at org.apache.camel.model.RouteDefinition.addRoutes(RouteDefinition.java:1072) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.model.RouteDefinition.addRoutes(RouteDefinition.java:196) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.impl.DefaultCamelContext.startRoute(DefaultCamelContext.java:974) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.impl.DefaultCamelContext.startRouteDefinitions(DefaultCamelContext.java:3301) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.impl.DefaultCamelContext.doStartCamel(DefaultCamelContext.java:3024) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.impl.DefaultCamelContext.access$000(DefaultCamelContext.java:175) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.impl.DefaultCamelContext$2.call(DefaultCamelContext.java:2854) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.impl.DefaultCamelContext$2.call(DefaultCamelContext.java:2850) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.impl.DefaultCamelContext.doWithDefinedClassLoader(DefaultCamelContext.java:2873) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.impl.DefaultCamelContext.doStart(DefaultCamelContext.java:2850) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.support.ServiceSupport.start(ServiceSupport.java:61) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.impl.DefaultCamelContext.start(DefaultCamelContext.java:2819) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.spring.boot.RoutesCollector.onApplicationEvent(RoutesCollector.java:116) ~[camel-spring-boot-2.17.0.jar:2.17.0]
+	... 44 common frames omitted
+Caused by: org.apache.camel.NoSuchEndpointException: No endpoint could be found for: GetAllATMs, please check your classpath contains the needed Camel component jar.
+	at org.apache.camel.util.CamelContextHelper.getMandatoryEndpoint(CamelContextHelper.java:81) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.model.RouteDefinition.resolveEndpoint(RouteDefinition.java:211) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.impl.DefaultRouteContext.resolveEndpoint(DefaultRouteContext.java:107) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.impl.DefaultRouteContext.resolveEndpoint(DefaultRouteContext.java:113) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.model.SendDefinition.resolveEndpoint(SendDefinition.java:62) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.model.SendDefinition.createProcessor(SendDefinition.java:56) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.model.ProcessorDefinition.createProcessor(ProcessorDefinition.java:483) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.model.ProcessorDefinition.createOutputsProcessorImpl(ProcessorDefinition.java:446) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.model.ProcessorDefinition.createOutputsProcessor(ProcessorDefinition.java:413) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.model.ProcessorDefinition.createOutputsProcessor(ProcessorDefinition.java:165) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.model.ExpressionNode.createFilterProcessor(ExpressionNode.java:109) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.model.WhenDefinition.createProcessor(WhenDefinition.java:74) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.model.WhenDefinition.createProcessor(WhenDefinition.java:32) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.model.ProcessorDefinition.createProcessor(ProcessorDefinition.java:483) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.model.ChoiceDefinition.createProcessor(ChoiceDefinition.java:135) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.model.ProcessorDefinition.makeProcessorImpl(ProcessorDefinition.java:534) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.model.ProcessorDefinition.makeProcessor(ProcessorDefinition.java:495) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.model.ProcessorDefinition.addRoutes(ProcessorDefinition.java:219) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.model.RouteDefinition.addRoutes(RouteDefinition.java:1069) ~[camel-core-2.17.2.jar:2.17.2]
+	... 56 common frames omitted
+
+2017-04-10 19:13:51.281  INFO 8220 --- [           main] .b.l.ClasspathLoggingApplicationListener : Application failed to start with classpath: [file:/C:/Users/normsby/Documents/NetBeansProjects/ING_ATM_Locator/target/surefire/surefirebooter5636998128895282040.jar, file:/C:/Users/normsby/.m2/repository/org/jacoco/org.jacoco.agent/0.7.5.201505241946/org.jacoco.agent-0.7.5.201505241946-runtime.jar]
+2017-04-10 19:13:51.281 ERROR 8220 --- [           main] o.s.test.context.TestContextManager      : Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@8228ad6] to prepare test instance [com.ing.meta.annotation.AuthoriseTest@47384004]
+
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124) ~[spring-test-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:83) ~[spring-test-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:189) ~[spring-test-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:131) ~[spring-test-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:230) ~[spring-test-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:228) [spring-test-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:287) [spring-test-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:289) [spring-test-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:247) [spring-test-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94) [spring-test-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) [spring-test-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) [spring-test-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191) [spring-test-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264) [surefire-junit4-2.14.1.jar:2.14.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153) [surefire-junit4-2.14.1.jar:2.14.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124) [surefire-junit4-2.14.1.jar:2.14.1]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_121]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_121]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_121]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_121]
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray2(ReflectionUtils.java:208) [surefire-api-2.14.1.jar:2.14.1]
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:159) [surefire-booter-2.14.1.jar:2.14.1]
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:87) [surefire-booter-2.14.1.jar:2.14.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153) [surefire-booter-2.14.1.jar:2.14.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:95) [surefire-booter-2.14.1.jar:2.14.1]
+Caused by: org.apache.camel.spring.boot.CamelSpringBootInitializationException: org.apache.camel.FailedToCreateRouteException: Failed to create route route114 at: >>> Choice[[When[{header{action} == all} -> [To[GetAllATMs]]], When[{header{action} == inCity} -> [To[GetAllATMsInCity]]]]] <<< in route: Route(route114)[[From[direct:call]] -> [SetBody[{null}], Cho... because of No endpoint could be found for: GetAllATMs, please check your classpath contains the needed Camel component jar.
+	at org.apache.camel.spring.boot.RoutesCollector.onApplicationEvent(RoutesCollector.java:126) ~[camel-spring-boot-2.17.0.jar:2.17.0]
+	at org.apache.camel.spring.boot.RoutesCollector.onApplicationEvent(RoutesCollector.java:41) ~[camel-spring-boot-2.17.0.jar:2.17.0]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:166) ~[spring-context-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:138) ~[spring-context-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:383) ~[spring-context-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:337) ~[spring-context-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:882) ~[spring-context-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:545) ~[spring-context-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:766) ~[spring-boot-1.3.3.RELEASE.jar:1.3.3.RELEASE]
+	at org.springframework.boot.SpringApplication.createAndRefreshContext(SpringApplication.java:361) ~[spring-boot-1.3.3.RELEASE.jar:1.3.3.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) ~[spring-boot-1.3.3.RELEASE.jar:1.3.3.RELEASE]
+	at org.springframework.boot.test.SpringApplicationContextLoader.loadContext(SpringApplicationContextLoader.java:98) ~[spring-boot-1.3.3.RELEASE.jar:1.3.3.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:98) ~[spring-test-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:116) ~[spring-test-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	... 31 common frames omitted
+Caused by: org.apache.camel.FailedToCreateRouteException: Failed to create route route114 at: >>> Choice[[When[{header{action} == all} -> [To[GetAllATMs]]], When[{header{action} == inCity} -> [To[GetAllATMsInCity]]]]] <<< in route: Route(route114)[[From[direct:call]] -> [SetBody[{null}], Cho... because of No endpoint could be found for: GetAllATMs, please check your classpath contains the needed Camel component jar.
+	at org.apache.camel.model.RouteDefinition.addRoutes(RouteDefinition.java:1072) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.model.RouteDefinition.addRoutes(RouteDefinition.java:196) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.impl.DefaultCamelContext.startRoute(DefaultCamelContext.java:974) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.impl.DefaultCamelContext.startRouteDefinitions(DefaultCamelContext.java:3301) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.impl.DefaultCamelContext.doStartCamel(DefaultCamelContext.java:3024) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.impl.DefaultCamelContext.access$000(DefaultCamelContext.java:175) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.impl.DefaultCamelContext$2.call(DefaultCamelContext.java:2854) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.impl.DefaultCamelContext$2.call(DefaultCamelContext.java:2850) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.impl.DefaultCamelContext.doWithDefinedClassLoader(DefaultCamelContext.java:2873) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.impl.DefaultCamelContext.doStart(DefaultCamelContext.java:2850) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.support.ServiceSupport.start(ServiceSupport.java:61) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.impl.DefaultCamelContext.start(DefaultCamelContext.java:2819) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.spring.boot.RoutesCollector.onApplicationEvent(RoutesCollector.java:116) ~[camel-spring-boot-2.17.0.jar:2.17.0]
+	... 44 common frames omitted
+Caused by: org.apache.camel.NoSuchEndpointException: No endpoint could be found for: GetAllATMs, please check your classpath contains the needed Camel component jar.
+	at org.apache.camel.util.CamelContextHelper.getMandatoryEndpoint(CamelContextHelper.java:81) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.model.RouteDefinition.resolveEndpoint(RouteDefinition.java:211) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.impl.DefaultRouteContext.resolveEndpoint(DefaultRouteContext.java:107) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.impl.DefaultRouteContext.resolveEndpoint(DefaultRouteContext.java:113) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.model.SendDefinition.resolveEndpoint(SendDefinition.java:62) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.model.SendDefinition.createProcessor(SendDefinition.java:56) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.model.ProcessorDefinition.createProcessor(ProcessorDefinition.java:483) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.model.ProcessorDefinition.createOutputsProcessorImpl(ProcessorDefinition.java:446) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.model.ProcessorDefinition.createOutputsProcessor(ProcessorDefinition.java:413) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.model.ProcessorDefinition.createOutputsProcessor(ProcessorDefinition.java:165) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.model.ExpressionNode.createFilterProcessor(ExpressionNode.java:109) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.model.WhenDefinition.createProcessor(WhenDefinition.java:74) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.model.WhenDefinition.createProcessor(WhenDefinition.java:32) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.model.ProcessorDefinition.createProcessor(ProcessorDefinition.java:483) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.model.ChoiceDefinition.createProcessor(ChoiceDefinition.java:135) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.model.ProcessorDefinition.makeProcessorImpl(ProcessorDefinition.java:534) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.model.ProcessorDefinition.makeProcessor(ProcessorDefinition.java:495) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.model.ProcessorDefinition.addRoutes(ProcessorDefinition.java:219) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.model.RouteDefinition.addRoutes(RouteDefinition.java:1069) ~[camel-core-2.17.2.jar:2.17.2]
+	... 56 common frames omitted
+
+]]></system-out>
+  </testcase>
+  <testcase name="whenUserHasUserRole_thenExtraRole_resultFalse" classname="com.ing.meta.annotation.AuthoriseTest" time="0">
+    <error message="Failed to load ApplicationContext" type="java.lang.IllegalStateException">java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.apache.camel.util.CamelContextHelper.getMandatoryEndpoint(CamelContextHelper.java:81)
+	at org.apache.camel.model.RouteDefinition.resolveEndpoint(RouteDefinition.java:211)
+	at org.apache.camel.impl.DefaultRouteContext.resolveEndpoint(DefaultRouteContext.java:107)
+	at org.apache.camel.impl.DefaultRouteContext.resolveEndpoint(DefaultRouteContext.java:113)
+	at org.apache.camel.model.SendDefinition.resolveEndpoint(SendDefinition.java:62)
+	at org.apache.camel.model.SendDefinition.createProcessor(SendDefinition.java:56)
+	at org.apache.camel.model.ProcessorDefinition.createProcessor(ProcessorDefinition.java:483)
+	at org.apache.camel.model.ProcessorDefinition.createOutputsProcessorImpl(ProcessorDefinition.java:446)
+	at org.apache.camel.model.ProcessorDefinition.createOutputsProcessor(ProcessorDefinition.java:413)
+	at org.apache.camel.model.ProcessorDefinition.createOutputsProcessor(ProcessorDefinition.java:165)
+	at org.apache.camel.model.ExpressionNode.createFilterProcessor(ExpressionNode.java:109)
+	at org.apache.camel.model.WhenDefinition.createProcessor(WhenDefinition.java:74)
+	at org.apache.camel.model.WhenDefinition.createProcessor(WhenDefinition.java:32)
+	at org.apache.camel.model.ProcessorDefinition.createProcessor(ProcessorDefinition.java:483)
+	at org.apache.camel.model.ChoiceDefinition.createProcessor(ChoiceDefinition.java:135)
+	at org.apache.camel.model.ProcessorDefinition.makeProcessorImpl(ProcessorDefinition.java:534)
+	at org.apache.camel.model.ProcessorDefinition.makeProcessor(ProcessorDefinition.java:495)
+	at org.apache.camel.model.ProcessorDefinition.addRoutes(ProcessorDefinition.java:219)
+	at org.apache.camel.model.RouteDefinition.addRoutes(RouteDefinition.java:1069)
+	at org.apache.camel.model.RouteDefinition.addRoutes(RouteDefinition.java:196)
+	at org.apache.camel.impl.DefaultCamelContext.startRoute(DefaultCamelContext.java:974)
+	at org.apache.camel.impl.DefaultCamelContext.startRouteDefinitions(DefaultCamelContext.java:3301)
+	at org.apache.camel.impl.DefaultCamelContext.doStartCamel(DefaultCamelContext.java:3024)
+	at org.apache.camel.impl.DefaultCamelContext.access$000(DefaultCamelContext.java:175)
+	at org.apache.camel.impl.DefaultCamelContext$2.call(DefaultCamelContext.java:2854)
+	at org.apache.camel.impl.DefaultCamelContext$2.call(DefaultCamelContext.java:2850)
+	at org.apache.camel.impl.DefaultCamelContext.doWithDefinedClassLoader(DefaultCamelContext.java:2873)
+	at org.apache.camel.impl.DefaultCamelContext.doStart(DefaultCamelContext.java:2850)
+	at org.apache.camel.support.ServiceSupport.start(ServiceSupport.java:61)
+	at org.apache.camel.impl.DefaultCamelContext.start(DefaultCamelContext.java:2819)
+	at org.apache.camel.spring.boot.RoutesCollector.onApplicationEvent(RoutesCollector.java:116)
+	at org.apache.camel.spring.boot.RoutesCollector.onApplicationEvent(RoutesCollector.java:41)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:166)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:138)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:383)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:337)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:882)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:545)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:766)
+	at org.springframework.boot.SpringApplication.createAndRefreshContext(SpringApplication.java:361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.test.SpringApplicationContextLoader.loadContext(SpringApplicationContextLoader.java:98)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:98)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:116)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:83)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:189)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:131)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:230)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:228)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:287)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:289)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:247)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray2(ReflectionUtils.java:208)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:159)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:87)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:95)
+</error>
+    <system-out><![CDATA[
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.3.3.RELEASE)
+
+2017-04-10 19:13:51.311  INFO 8220 --- [           main] com.ing.meta.annotation.AuthoriseTest    : Starting AuthoriseTest on PPL882039FC with PID 8220 (C:\Users\normsby\Documents\NetBeansProjects\ING_ATM_Locator\target\test-classes started by normsby in C:\Users\normsby\Documents\NetBeansProjects\ING_ATM_Locator)
+2017-04-10 19:13:51.311  INFO 8220 --- [           main] com.ing.meta.annotation.AuthoriseTest    : No active profile set, falling back to default profiles: default
+2017-04-10 19:13:51.311  INFO 8220 --- [           main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@3733f6cc: startup date [Mon Apr 10 19:13:51 EDT 2017]; root of context hierarchy
+2017-04-10 19:13:51.621  INFO 8220 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [class org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration$$EnhancerBySpringCGLIB$$da46e5e5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-10 19:13:51.621  INFO 8220 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'objectPostProcessor' of type [class org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-10 19:13:51.621  INFO 8220 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@3fa86d1b' of type [class org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-10 19:13:51.631  INFO 8220 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [class org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration$$EnhancerBySpringCGLIB$$ff1b8897] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-10 19:13:51.631  INFO 8220 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [class org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-10 19:13:51.631  INFO 8220 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.apache.camel.spring.boot.CamelAutoConfiguration' of type [class org.apache.camel.spring.boot.CamelAutoConfiguration$$EnhancerBySpringCGLIB$$63c2e3ca] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-10 19:13:52.021  INFO 8220 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@59bab924, org.springframework.security.web.context.SecurityContextPersistenceFilter@1de3a8c4, org.springframework.security.web.header.HeaderWriterFilter@5df5d138, org.springframework.security.web.csrf.CsrfFilter@75f642d3, org.springframework.security.web.authentication.logout.LogoutFilter@7b32a57e, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@16b4403a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@764bff92, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5448c72, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3667be5e, org.springframework.security.web.session.SessionManagementFilter@5ac49995, org.springframework.security.web.access.ExceptionTranslationFilter@2cb8ef6d, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4a8d7f06]
+2017-04-10 19:13:52.101  INFO 8220 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@3733f6cc: startup date [Mon Apr 10 19:13:51 EDT 2017]; root of context hierarchy
+2017-04-10 19:13:52.121  INFO 8220 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public java.lang.String com.ing.error.CustomErrorController.customError(org.springframework.ui.Model,javax.servlet.http.HttpServletRequest)
+2017-04-10 19:13:52.121  INFO 8220 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/403]}" onto public java.lang.String com.ing.error.CustomErrorController.unauthorised(org.springframework.ui.Model,javax.servlet.http.HttpServletRequest)
+2017-04-10 19:13:52.121  INFO 8220 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/index],methods=[GET]}" onto public java.lang.String com.ing.web.MainController.index()
+2017-04-10 19:13:52.121  INFO 8220 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/],methods=[GET]}" onto public java.lang.String com.ing.web.MainController.root()
+2017-04-10 19:13:52.121  INFO 8220 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/login-error],methods=[GET]}" onto public java.lang.String com.ing.web.MainController.loginError(org.springframework.ui.Model)
+2017-04-10 19:13:52.121  INFO 8220 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/login],methods=[GET]}" onto public java.lang.String com.ing.web.MainController.login()
+2017-04-10 19:13:52.121  INFO 8220 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/index],methods=[GET]}" onto public java.lang.String com.ing.web.MainController.adminIndex()
+2017-04-10 19:13:52.121  INFO 8220 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/index],methods=[GET]}" onto public java.lang.String com.ing.web.MainController.userIndex()
+2017-04-10 19:13:52.121  INFO 8220 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/public/index],methods=[GET]}" onto public java.lang.String com.ing.web.MainController.publicIndex()
+2017-04-10 19:13:52.121  INFO 8220 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/extra/index],methods=[GET]}" onto public java.lang.String com.ing.web.MainController.extraIndex()
+2017-04-10 19:13:52.121  INFO 8220 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/tags/index],methods=[GET]}" onto public java.lang.String com.ing.web.SecurityTagController.index(org.springframework.security.core.userdetails.User)
+2017-04-10 19:13:52.121  INFO 8220 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/tags/admin/index],methods=[GET]}" onto public java.lang.String com.ing.web.SecurityTagController.adminIndex(org.springframework.security.core.userdetails.User)
+2017-04-10 19:13:52.121  INFO 8220 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/tags/extra/index],methods=[GET]}" onto public java.lang.String com.ing.web.SecurityTagController.extraUser(org.springframework.security.core.userdetails.User)
+2017-04-10 19:13:52.121  INFO 8220 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/tags/user/index],methods=[GET]}" onto public java.lang.String com.ing.web.SecurityTagController.userIndex(org.springframework.security.core.userdetails.User)
+2017-04-10 19:13:52.211  INFO 8220 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-04-10 19:13:52.211  INFO 8220 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-04-10 19:13:52.241  INFO 8220 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-04-10 19:13:52.331  INFO 8220 --- [           main] o.a.c.i.converter.DefaultTypeConverter   : Loaded 191 type converters
+2017-04-10 19:13:52.441  INFO 8220 --- [           main] o.a.camel.spring.boot.RoutesCollector    : Loading additional Camel XML routes from: classpath:camel/*.xml
+2017-04-10 19:13:52.441  INFO 8220 --- [           main] o.a.camel.spring.boot.RoutesCollector    : Loading additional Camel XML rests from: classpath:camel-rest/*.xml
+2017-04-10 19:13:52.441  INFO 8220 --- [           main] o.a.camel.spring.SpringCamelContext      : Apache Camel 2.17.2 (CamelContext: camel-39) is starting
+2017-04-10 19:13:52.441  INFO 8220 --- [           main] o.a.c.m.ManagedManagementStrategy        : JMX is enabled
+2017-04-10 19:13:52.441  INFO 8220 --- [           main] o.a.c.i.DefaultRuntimeEndpointRegistry   : Runtime endpoint registry is in extended mode gathering usage statistics of all incoming and outgoing endpoints (cache limit: 1000)
+2017-04-10 19:13:52.471  INFO 8220 --- [           main] o.a.camel.spring.SpringCamelContext      : Apache Camel 2.17.2 (CamelContext: camel-39) is shutting down
+2017-04-10 19:13:52.471  INFO 8220 --- [           main] o.a.camel.spring.SpringCamelContext      : Apache Camel 2.17.2 (CamelContext: camel-39) uptime 0.030 seconds
+2017-04-10 19:13:52.471  INFO 8220 --- [           main] o.a.camel.spring.SpringCamelContext      : Apache Camel 2.17.2 (CamelContext: camel-39) is shutdown in 0.000 seconds
+2017-04-10 19:13:52.471 ERROR 8220 --- [           main] o.s.boot.SpringApplication               : Application startup failed
+
+org.apache.camel.spring.boot.CamelSpringBootInitializationException: org.apache.camel.FailedToCreateRouteException: Failed to create route route117 at: >>> Choice[[When[{header{action} == all} -> [To[GetAllATMs]]], When[{header{action} == inCity} -> [To[GetAllATMsInCity]]]]] <<< in route: Route(route117)[[From[direct:call]] -> [SetBody[{null}], Cho... because of No endpoint could be found for: GetAllATMs, please check your classpath contains the needed Camel component jar.
+	at org.apache.camel.spring.boot.RoutesCollector.onApplicationEvent(RoutesCollector.java:126) ~[camel-spring-boot-2.17.0.jar:2.17.0]
+	at org.apache.camel.spring.boot.RoutesCollector.onApplicationEvent(RoutesCollector.java:41) ~[camel-spring-boot-2.17.0.jar:2.17.0]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:166) ~[spring-context-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:138) ~[spring-context-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:383) ~[spring-context-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:337) ~[spring-context-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:882) ~[spring-context-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:545) ~[spring-context-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:766) ~[spring-boot-1.3.3.RELEASE.jar:1.3.3.RELEASE]
+	at org.springframework.boot.SpringApplication.createAndRefreshContext(SpringApplication.java:361) ~[spring-boot-1.3.3.RELEASE.jar:1.3.3.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) ~[spring-boot-1.3.3.RELEASE.jar:1.3.3.RELEASE]
+	at org.springframework.boot.test.SpringApplicationContextLoader.loadContext(SpringApplicationContextLoader.java:98) [spring-boot-1.3.3.RELEASE.jar:1.3.3.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:98) [spring-test-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:116) [spring-test-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:83) [spring-test-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:189) [spring-test-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:131) [spring-test-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:230) [spring-test-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:228) [spring-test-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:287) [spring-test-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:289) [spring-test-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:247) [spring-test-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94) [spring-test-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) [spring-test-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) [spring-test-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191) [spring-test-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264) [surefire-junit4-2.14.1.jar:2.14.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153) [surefire-junit4-2.14.1.jar:2.14.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124) [surefire-junit4-2.14.1.jar:2.14.1]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_121]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_121]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_121]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_121]
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray2(ReflectionUtils.java:208) [surefire-api-2.14.1.jar:2.14.1]
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:159) [surefire-booter-2.14.1.jar:2.14.1]
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:87) [surefire-booter-2.14.1.jar:2.14.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153) [surefire-booter-2.14.1.jar:2.14.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:95) [surefire-booter-2.14.1.jar:2.14.1]
+Caused by: org.apache.camel.FailedToCreateRouteException: Failed to create route route117 at: >>> Choice[[When[{header{action} == all} -> [To[GetAllATMs]]], When[{header{action} == inCity} -> [To[GetAllATMsInCity]]]]] <<< in route: Route(route117)[[From[direct:call]] -> [SetBody[{null}], Cho... because of No endpoint could be found for: GetAllATMs, please check your classpath contains the needed Camel component jar.
+	at org.apache.camel.model.RouteDefinition.addRoutes(RouteDefinition.java:1072) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.model.RouteDefinition.addRoutes(RouteDefinition.java:196) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.impl.DefaultCamelContext.startRoute(DefaultCamelContext.java:974) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.impl.DefaultCamelContext.startRouteDefinitions(DefaultCamelContext.java:3301) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.impl.DefaultCamelContext.doStartCamel(DefaultCamelContext.java:3024) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.impl.DefaultCamelContext.access$000(DefaultCamelContext.java:175) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.impl.DefaultCamelContext$2.call(DefaultCamelContext.java:2854) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.impl.DefaultCamelContext$2.call(DefaultCamelContext.java:2850) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.impl.DefaultCamelContext.doWithDefinedClassLoader(DefaultCamelContext.java:2873) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.impl.DefaultCamelContext.doStart(DefaultCamelContext.java:2850) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.support.ServiceSupport.start(ServiceSupport.java:61) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.impl.DefaultCamelContext.start(DefaultCamelContext.java:2819) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.spring.boot.RoutesCollector.onApplicationEvent(RoutesCollector.java:116) ~[camel-spring-boot-2.17.0.jar:2.17.0]
+	... 44 common frames omitted
+Caused by: org.apache.camel.NoSuchEndpointException: No endpoint could be found for: GetAllATMs, please check your classpath contains the needed Camel component jar.
+	at org.apache.camel.util.CamelContextHelper.getMandatoryEndpoint(CamelContextHelper.java:81) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.model.RouteDefinition.resolveEndpoint(RouteDefinition.java:211) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.impl.DefaultRouteContext.resolveEndpoint(DefaultRouteContext.java:107) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.impl.DefaultRouteContext.resolveEndpoint(DefaultRouteContext.java:113) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.model.SendDefinition.resolveEndpoint(SendDefinition.java:62) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.model.SendDefinition.createProcessor(SendDefinition.java:56) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.model.ProcessorDefinition.createProcessor(ProcessorDefinition.java:483) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.model.ProcessorDefinition.createOutputsProcessorImpl(ProcessorDefinition.java:446) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.model.ProcessorDefinition.createOutputsProcessor(ProcessorDefinition.java:413) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.model.ProcessorDefinition.createOutputsProcessor(ProcessorDefinition.java:165) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.model.ExpressionNode.createFilterProcessor(ExpressionNode.java:109) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.model.WhenDefinition.createProcessor(WhenDefinition.java:74) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.model.WhenDefinition.createProcessor(WhenDefinition.java:32) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.model.ProcessorDefinition.createProcessor(ProcessorDefinition.java:483) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.model.ChoiceDefinition.createProcessor(ChoiceDefinition.java:135) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.model.ProcessorDefinition.makeProcessorImpl(ProcessorDefinition.java:534) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.model.ProcessorDefinition.makeProcessor(ProcessorDefinition.java:495) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.model.ProcessorDefinition.addRoutes(ProcessorDefinition.java:219) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.model.RouteDefinition.addRoutes(RouteDefinition.java:1069) ~[camel-core-2.17.2.jar:2.17.2]
+	... 56 common frames omitted
+
+2017-04-10 19:13:52.471  INFO 8220 --- [           main] .b.l.ClasspathLoggingApplicationListener : Application failed to start with classpath: [file:/C:/Users/normsby/Documents/NetBeansProjects/ING_ATM_Locator/target/surefire/surefirebooter5636998128895282040.jar, file:/C:/Users/normsby/.m2/repository/org/jacoco/org.jacoco.agent/0.7.5.201505241946/org.jacoco.agent-0.7.5.201505241946-runtime.jar]
+2017-04-10 19:13:52.471 ERROR 8220 --- [           main] o.s.test.context.TestContextManager      : Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@8228ad6] to prepare test instance [com.ing.meta.annotation.AuthoriseTest@b4691ea]
+
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124) ~[spring-test-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:83) ~[spring-test-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:189) ~[spring-test-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:131) ~[spring-test-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:230) ~[spring-test-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:228) [spring-test-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:287) [spring-test-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:289) [spring-test-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:247) [spring-test-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94) [spring-test-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) [spring-test-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) [spring-test-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191) [spring-test-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264) [surefire-junit4-2.14.1.jar:2.14.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153) [surefire-junit4-2.14.1.jar:2.14.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124) [surefire-junit4-2.14.1.jar:2.14.1]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_121]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_121]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_121]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_121]
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray2(ReflectionUtils.java:208) [surefire-api-2.14.1.jar:2.14.1]
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:159) [surefire-booter-2.14.1.jar:2.14.1]
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:87) [surefire-booter-2.14.1.jar:2.14.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153) [surefire-booter-2.14.1.jar:2.14.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:95) [surefire-booter-2.14.1.jar:2.14.1]
+Caused by: org.apache.camel.spring.boot.CamelSpringBootInitializationException: org.apache.camel.FailedToCreateRouteException: Failed to create route route117 at: >>> Choice[[When[{header{action} == all} -> [To[GetAllATMs]]], When[{header{action} == inCity} -> [To[GetAllATMsInCity]]]]] <<< in route: Route(route117)[[From[direct:call]] -> [SetBody[{null}], Cho... because of No endpoint could be found for: GetAllATMs, please check your classpath contains the needed Camel component jar.
+	at org.apache.camel.spring.boot.RoutesCollector.onApplicationEvent(RoutesCollector.java:126) ~[camel-spring-boot-2.17.0.jar:2.17.0]
+	at org.apache.camel.spring.boot.RoutesCollector.onApplicationEvent(RoutesCollector.java:41) ~[camel-spring-boot-2.17.0.jar:2.17.0]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:166) ~[spring-context-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:138) ~[spring-context-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:383) ~[spring-context-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:337) ~[spring-context-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:882) ~[spring-context-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:545) ~[spring-context-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:766) ~[spring-boot-1.3.3.RELEASE.jar:1.3.3.RELEASE]
+	at org.springframework.boot.SpringApplication.createAndRefreshContext(SpringApplication.java:361) ~[spring-boot-1.3.3.RELEASE.jar:1.3.3.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) ~[spring-boot-1.3.3.RELEASE.jar:1.3.3.RELEASE]
+	at org.springframework.boot.test.SpringApplicationContextLoader.loadContext(SpringApplicationContextLoader.java:98) ~[spring-boot-1.3.3.RELEASE.jar:1.3.3.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:98) ~[spring-test-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:116) ~[spring-test-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	... 31 common frames omitted
+Caused by: org.apache.camel.FailedToCreateRouteException: Failed to create route route117 at: >>> Choice[[When[{header{action} == all} -> [To[GetAllATMs]]], When[{header{action} == inCity} -> [To[GetAllATMsInCity]]]]] <<< in route: Route(route117)[[From[direct:call]] -> [SetBody[{null}], Cho... because of No endpoint could be found for: GetAllATMs, please check your classpath contains the needed Camel component jar.
+	at org.apache.camel.model.RouteDefinition.addRoutes(RouteDefinition.java:1072) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.model.RouteDefinition.addRoutes(RouteDefinition.java:196) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.impl.DefaultCamelContext.startRoute(DefaultCamelContext.java:974) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.impl.DefaultCamelContext.startRouteDefinitions(DefaultCamelContext.java:3301) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.impl.DefaultCamelContext.doStartCamel(DefaultCamelContext.java:3024) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.impl.DefaultCamelContext.access$000(DefaultCamelContext.java:175) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.impl.DefaultCamelContext$2.call(DefaultCamelContext.java:2854) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.impl.DefaultCamelContext$2.call(DefaultCamelContext.java:2850) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.impl.DefaultCamelContext.doWithDefinedClassLoader(DefaultCamelContext.java:2873) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.impl.DefaultCamelContext.doStart(DefaultCamelContext.java:2850) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.support.ServiceSupport.start(ServiceSupport.java:61) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.impl.DefaultCamelContext.start(DefaultCamelContext.java:2819) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.spring.boot.RoutesCollector.onApplicationEvent(RoutesCollector.java:116) ~[camel-spring-boot-2.17.0.jar:2.17.0]
+	... 44 common frames omitted
+Caused by: org.apache.camel.NoSuchEndpointException: No endpoint could be found for: GetAllATMs, please check your classpath contains the needed Camel component jar.
+	at org.apache.camel.util.CamelContextHelper.getMandatoryEndpoint(CamelContextHelper.java:81) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.model.RouteDefinition.resolveEndpoint(RouteDefinition.java:211) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.impl.DefaultRouteContext.resolveEndpoint(DefaultRouteContext.java:107) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.impl.DefaultRouteContext.resolveEndpoint(DefaultRouteContext.java:113) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.model.SendDefinition.resolveEndpoint(SendDefinition.java:62) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.model.SendDefinition.createProcessor(SendDefinition.java:56) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.model.ProcessorDefinition.createProcessor(ProcessorDefinition.java:483) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.model.ProcessorDefinition.createOutputsProcessorImpl(ProcessorDefinition.java:446) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.model.ProcessorDefinition.createOutputsProcessor(ProcessorDefinition.java:413) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.model.ProcessorDefinition.createOutputsProcessor(ProcessorDefinition.java:165) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.model.ExpressionNode.createFilterProcessor(ExpressionNode.java:109) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.model.WhenDefinition.createProcessor(WhenDefinition.java:74) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.model.WhenDefinition.createProcessor(WhenDefinition.java:32) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.model.ProcessorDefinition.createProcessor(ProcessorDefinition.java:483) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.model.ChoiceDefinition.createProcessor(ChoiceDefinition.java:135) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.model.ProcessorDefinition.makeProcessorImpl(ProcessorDefinition.java:534) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.model.ProcessorDefinition.makeProcessor(ProcessorDefinition.java:495) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.model.ProcessorDefinition.addRoutes(ProcessorDefinition.java:219) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.model.RouteDefinition.addRoutes(RouteDefinition.java:1069) ~[camel-core-2.17.2.jar:2.17.2]
+	... 56 common frames omitted
+
+]]></system-out>
+  </testcase>
+  <testcase name="whenUserHasExtraRole_thenExtraRole_resultTrue" classname="com.ing.meta.annotation.AuthoriseTest" time="0">
+    <error message="Failed to load ApplicationContext" type="java.lang.IllegalStateException">java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.apache.camel.util.CamelContextHelper.getMandatoryEndpoint(CamelContextHelper.java:81)
+	at org.apache.camel.model.RouteDefinition.resolveEndpoint(RouteDefinition.java:211)
+	at org.apache.camel.impl.DefaultRouteContext.resolveEndpoint(DefaultRouteContext.java:107)
+	at org.apache.camel.impl.DefaultRouteContext.resolveEndpoint(DefaultRouteContext.java:113)
+	at org.apache.camel.model.SendDefinition.resolveEndpoint(SendDefinition.java:62)
+	at org.apache.camel.model.SendDefinition.createProcessor(SendDefinition.java:56)
+	at org.apache.camel.model.ProcessorDefinition.createProcessor(ProcessorDefinition.java:483)
+	at org.apache.camel.model.ProcessorDefinition.createOutputsProcessorImpl(ProcessorDefinition.java:446)
+	at org.apache.camel.model.ProcessorDefinition.createOutputsProcessor(ProcessorDefinition.java:413)
+	at org.apache.camel.model.ProcessorDefinition.createOutputsProcessor(ProcessorDefinition.java:165)
+	at org.apache.camel.model.ExpressionNode.createFilterProcessor(ExpressionNode.java:109)
+	at org.apache.camel.model.WhenDefinition.createProcessor(WhenDefinition.java:74)
+	at org.apache.camel.model.WhenDefinition.createProcessor(WhenDefinition.java:32)
+	at org.apache.camel.model.ProcessorDefinition.createProcessor(ProcessorDefinition.java:483)
+	at org.apache.camel.model.ChoiceDefinition.createProcessor(ChoiceDefinition.java:135)
+	at org.apache.camel.model.ProcessorDefinition.makeProcessorImpl(ProcessorDefinition.java:534)
+	at org.apache.camel.model.ProcessorDefinition.makeProcessor(ProcessorDefinition.java:495)
+	at org.apache.camel.model.ProcessorDefinition.addRoutes(ProcessorDefinition.java:219)
+	at org.apache.camel.model.RouteDefinition.addRoutes(RouteDefinition.java:1069)
+	at org.apache.camel.model.RouteDefinition.addRoutes(RouteDefinition.java:196)
+	at org.apache.camel.impl.DefaultCamelContext.startRoute(DefaultCamelContext.java:974)
+	at org.apache.camel.impl.DefaultCamelContext.startRouteDefinitions(DefaultCamelContext.java:3301)
+	at org.apache.camel.impl.DefaultCamelContext.doStartCamel(DefaultCamelContext.java:3024)
+	at org.apache.camel.impl.DefaultCamelContext.access$000(DefaultCamelContext.java:175)
+	at org.apache.camel.impl.DefaultCamelContext$2.call(DefaultCamelContext.java:2854)
+	at org.apache.camel.impl.DefaultCamelContext$2.call(DefaultCamelContext.java:2850)
+	at org.apache.camel.impl.DefaultCamelContext.doWithDefinedClassLoader(DefaultCamelContext.java:2873)
+	at org.apache.camel.impl.DefaultCamelContext.doStart(DefaultCamelContext.java:2850)
+	at org.apache.camel.support.ServiceSupport.start(ServiceSupport.java:61)
+	at org.apache.camel.impl.DefaultCamelContext.start(DefaultCamelContext.java:2819)
+	at org.apache.camel.spring.boot.RoutesCollector.onApplicationEvent(RoutesCollector.java:116)
+	at org.apache.camel.spring.boot.RoutesCollector.onApplicationEvent(RoutesCollector.java:41)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:166)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:138)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:383)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:337)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:882)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:545)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:766)
+	at org.springframework.boot.SpringApplication.createAndRefreshContext(SpringApplication.java:361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.test.SpringApplicationContextLoader.loadContext(SpringApplicationContextLoader.java:98)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:98)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:116)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:83)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:189)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:131)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:230)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:228)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:287)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:289)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:247)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray2(ReflectionUtils.java:208)
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:159)
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:87)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:95)
+</error>
+    <system-out><![CDATA[
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.3.3.RELEASE)
+
+2017-04-10 19:13:52.501  INFO 8220 --- [           main] com.ing.meta.annotation.AuthoriseTest    : Starting AuthoriseTest on PPL882039FC with PID 8220 (C:\Users\normsby\Documents\NetBeansProjects\ING_ATM_Locator\target\test-classes started by normsby in C:\Users\normsby\Documents\NetBeansProjects\ING_ATM_Locator)
+2017-04-10 19:13:52.501  INFO 8220 --- [           main] com.ing.meta.annotation.AuthoriseTest    : No active profile set, falling back to default profiles: default
+2017-04-10 19:13:52.501  INFO 8220 --- [           main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@7ef7161d: startup date [Mon Apr 10 19:13:52 EDT 2017]; root of context hierarchy
+2017-04-10 19:13:52.780  INFO 8220 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [class org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration$$EnhancerBySpringCGLIB$$da46e5e5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-10 19:13:52.780  INFO 8220 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'objectPostProcessor' of type [class org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-10 19:13:52.780  INFO 8220 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@64ebb0cf' of type [class org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-10 19:13:52.790  INFO 8220 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [class org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration$$EnhancerBySpringCGLIB$$ff1b8897] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-10 19:13:52.790  INFO 8220 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [class org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-10 19:13:52.790  INFO 8220 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.apache.camel.spring.boot.CamelAutoConfiguration' of type [class org.apache.camel.spring.boot.CamelAutoConfiguration$$EnhancerBySpringCGLIB$$63c2e3ca] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-04-10 19:13:53.210  INFO 8220 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: org.springframework.security.web.util.matcher.AnyRequestMatcher@1, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4bef375, org.springframework.security.web.context.SecurityContextPersistenceFilter@4c6b8ce7, org.springframework.security.web.header.HeaderWriterFilter@64bed159, org.springframework.security.web.csrf.CsrfFilter@2b7beb32, org.springframework.security.web.authentication.logout.LogoutFilter@18909ee8, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@3ffef19e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5c4803df, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4eee2516, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4c62411a, org.springframework.security.web.session.SessionManagementFilter@383dc2a9, org.springframework.security.web.access.ExceptionTranslationFilter@6d9fa590, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2b0852fd]
+2017-04-10 19:13:53.300  INFO 8220 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@7ef7161d: startup date [Mon Apr 10 19:13:52 EDT 2017]; root of context hierarchy
+2017-04-10 19:13:53.340  INFO 8220 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public java.lang.String com.ing.error.CustomErrorController.customError(org.springframework.ui.Model,javax.servlet.http.HttpServletRequest)
+2017-04-10 19:13:53.340  INFO 8220 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/403]}" onto public java.lang.String com.ing.error.CustomErrorController.unauthorised(org.springframework.ui.Model,javax.servlet.http.HttpServletRequest)
+2017-04-10 19:13:53.340  INFO 8220 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/index],methods=[GET]}" onto public java.lang.String com.ing.web.MainController.index()
+2017-04-10 19:13:53.340  INFO 8220 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/],methods=[GET]}" onto public java.lang.String com.ing.web.MainController.root()
+2017-04-10 19:13:53.340  INFO 8220 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/login-error],methods=[GET]}" onto public java.lang.String com.ing.web.MainController.loginError(org.springframework.ui.Model)
+2017-04-10 19:13:53.340  INFO 8220 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/login],methods=[GET]}" onto public java.lang.String com.ing.web.MainController.login()
+2017-04-10 19:13:53.340  INFO 8220 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/admin/index],methods=[GET]}" onto public java.lang.String com.ing.web.MainController.adminIndex()
+2017-04-10 19:13:53.340  INFO 8220 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/user/index],methods=[GET]}" onto public java.lang.String com.ing.web.MainController.userIndex()
+2017-04-10 19:13:53.340  INFO 8220 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/public/index],methods=[GET]}" onto public java.lang.String com.ing.web.MainController.publicIndex()
+2017-04-10 19:13:53.340  INFO 8220 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/extra/index],methods=[GET]}" onto public java.lang.String com.ing.web.MainController.extraIndex()
+2017-04-10 19:13:53.340  INFO 8220 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/tags/index],methods=[GET]}" onto public java.lang.String com.ing.web.SecurityTagController.index(org.springframework.security.core.userdetails.User)
+2017-04-10 19:13:53.340  INFO 8220 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/tags/admin/index],methods=[GET]}" onto public java.lang.String com.ing.web.SecurityTagController.adminIndex(org.springframework.security.core.userdetails.User)
+2017-04-10 19:13:53.340  INFO 8220 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/tags/extra/index],methods=[GET]}" onto public java.lang.String com.ing.web.SecurityTagController.extraUser(org.springframework.security.core.userdetails.User)
+2017-04-10 19:13:53.340  INFO 8220 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/tags/user/index],methods=[GET]}" onto public java.lang.String com.ing.web.SecurityTagController.userIndex(org.springframework.security.core.userdetails.User)
+2017-04-10 19:13:53.440  INFO 8220 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-04-10 19:13:53.440  INFO 8220 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-04-10 19:13:53.490  INFO 8220 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-04-10 19:13:53.630  INFO 8220 --- [           main] o.a.c.i.converter.DefaultTypeConverter   : Loaded 191 type converters
+2017-04-10 19:13:53.740  INFO 8220 --- [           main] o.a.camel.spring.boot.RoutesCollector    : Loading additional Camel XML routes from: classpath:camel/*.xml
+2017-04-10 19:13:53.740  INFO 8220 --- [           main] o.a.camel.spring.boot.RoutesCollector    : Loading additional Camel XML rests from: classpath:camel-rest/*.xml
+2017-04-10 19:13:53.750  INFO 8220 --- [           main] o.a.camel.spring.SpringCamelContext      : Apache Camel 2.17.2 (CamelContext: camel-40) is starting
+2017-04-10 19:13:53.750  INFO 8220 --- [           main] o.a.c.m.ManagedManagementStrategy        : JMX is enabled
+2017-04-10 19:13:53.750  INFO 8220 --- [           main] o.a.c.i.DefaultRuntimeEndpointRegistry   : Runtime endpoint registry is in extended mode gathering usage statistics of all incoming and outgoing endpoints (cache limit: 1000)
+2017-04-10 19:13:53.770  INFO 8220 --- [           main] o.a.camel.spring.SpringCamelContext      : Apache Camel 2.17.2 (CamelContext: camel-40) is shutting down
+2017-04-10 19:13:53.770  INFO 8220 --- [           main] o.a.camel.spring.SpringCamelContext      : Apache Camel 2.17.2 (CamelContext: camel-40) uptime 0.020 seconds
+2017-04-10 19:13:53.770  INFO 8220 --- [           main] o.a.camel.spring.SpringCamelContext      : Apache Camel 2.17.2 (CamelContext: camel-40) is shutdown in 0.000 seconds
+2017-04-10 19:13:53.780 ERROR 8220 --- [           main] o.s.boot.SpringApplication               : Application startup failed
+
+org.apache.camel.spring.boot.CamelSpringBootInitializationException: org.apache.camel.FailedToCreateRouteException: Failed to create route route120 at: >>> Choice[[When[{header{action} == all} -> [To[GetAllATMs]]], When[{header{action} == inCity} -> [To[GetAllATMsInCity]]]]] <<< in route: Route(route120)[[From[direct:call]] -> [SetBody[{null}], Cho... because of No endpoint could be found for: GetAllATMs, please check your classpath contains the needed Camel component jar.
+	at org.apache.camel.spring.boot.RoutesCollector.onApplicationEvent(RoutesCollector.java:126) ~[camel-spring-boot-2.17.0.jar:2.17.0]
+	at org.apache.camel.spring.boot.RoutesCollector.onApplicationEvent(RoutesCollector.java:41) ~[camel-spring-boot-2.17.0.jar:2.17.0]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:166) ~[spring-context-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:138) ~[spring-context-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:383) ~[spring-context-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:337) ~[spring-context-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:882) ~[spring-context-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:545) ~[spring-context-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:766) ~[spring-boot-1.3.3.RELEASE.jar:1.3.3.RELEASE]
+	at org.springframework.boot.SpringApplication.createAndRefreshContext(SpringApplication.java:361) ~[spring-boot-1.3.3.RELEASE.jar:1.3.3.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) ~[spring-boot-1.3.3.RELEASE.jar:1.3.3.RELEASE]
+	at org.springframework.boot.test.SpringApplicationContextLoader.loadContext(SpringApplicationContextLoader.java:98) [spring-boot-1.3.3.RELEASE.jar:1.3.3.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:98) [spring-test-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:116) [spring-test-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:83) [spring-test-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:189) [spring-test-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:131) [spring-test-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:230) [spring-test-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:228) [spring-test-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:287) [spring-test-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:289) [spring-test-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:247) [spring-test-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94) [spring-test-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) [spring-test-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) [spring-test-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191) [spring-test-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264) [surefire-junit4-2.14.1.jar:2.14.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153) [surefire-junit4-2.14.1.jar:2.14.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124) [surefire-junit4-2.14.1.jar:2.14.1]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_121]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_121]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_121]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_121]
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray2(ReflectionUtils.java:208) [surefire-api-2.14.1.jar:2.14.1]
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:159) [surefire-booter-2.14.1.jar:2.14.1]
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:87) [surefire-booter-2.14.1.jar:2.14.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153) [surefire-booter-2.14.1.jar:2.14.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:95) [surefire-booter-2.14.1.jar:2.14.1]
+Caused by: org.apache.camel.FailedToCreateRouteException: Failed to create route route120 at: >>> Choice[[When[{header{action} == all} -> [To[GetAllATMs]]], When[{header{action} == inCity} -> [To[GetAllATMsInCity]]]]] <<< in route: Route(route120)[[From[direct:call]] -> [SetBody[{null}], Cho... because of No endpoint could be found for: GetAllATMs, please check your classpath contains the needed Camel component jar.
+	at org.apache.camel.model.RouteDefinition.addRoutes(RouteDefinition.java:1072) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.model.RouteDefinition.addRoutes(RouteDefinition.java:196) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.impl.DefaultCamelContext.startRoute(DefaultCamelContext.java:974) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.impl.DefaultCamelContext.startRouteDefinitions(DefaultCamelContext.java:3301) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.impl.DefaultCamelContext.doStartCamel(DefaultCamelContext.java:3024) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.impl.DefaultCamelContext.access$000(DefaultCamelContext.java:175) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.impl.DefaultCamelContext$2.call(DefaultCamelContext.java:2854) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.impl.DefaultCamelContext$2.call(DefaultCamelContext.java:2850) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.impl.DefaultCamelContext.doWithDefinedClassLoader(DefaultCamelContext.java:2873) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.impl.DefaultCamelContext.doStart(DefaultCamelContext.java:2850) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.support.ServiceSupport.start(ServiceSupport.java:61) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.impl.DefaultCamelContext.start(DefaultCamelContext.java:2819) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.spring.boot.RoutesCollector.onApplicationEvent(RoutesCollector.java:116) ~[camel-spring-boot-2.17.0.jar:2.17.0]
+	... 44 common frames omitted
+Caused by: org.apache.camel.NoSuchEndpointException: No endpoint could be found for: GetAllATMs, please check your classpath contains the needed Camel component jar.
+	at org.apache.camel.util.CamelContextHelper.getMandatoryEndpoint(CamelContextHelper.java:81) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.model.RouteDefinition.resolveEndpoint(RouteDefinition.java:211) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.impl.DefaultRouteContext.resolveEndpoint(DefaultRouteContext.java:107) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.impl.DefaultRouteContext.resolveEndpoint(DefaultRouteContext.java:113) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.model.SendDefinition.resolveEndpoint(SendDefinition.java:62) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.model.SendDefinition.createProcessor(SendDefinition.java:56) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.model.ProcessorDefinition.createProcessor(ProcessorDefinition.java:483) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.model.ProcessorDefinition.createOutputsProcessorImpl(ProcessorDefinition.java:446) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.model.ProcessorDefinition.createOutputsProcessor(ProcessorDefinition.java:413) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.model.ProcessorDefinition.createOutputsProcessor(ProcessorDefinition.java:165) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.model.ExpressionNode.createFilterProcessor(ExpressionNode.java:109) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.model.WhenDefinition.createProcessor(WhenDefinition.java:74) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.model.WhenDefinition.createProcessor(WhenDefinition.java:32) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.model.ProcessorDefinition.createProcessor(ProcessorDefinition.java:483) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.model.ChoiceDefinition.createProcessor(ChoiceDefinition.java:135) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.model.ProcessorDefinition.makeProcessorImpl(ProcessorDefinition.java:534) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.model.ProcessorDefinition.makeProcessor(ProcessorDefinition.java:495) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.model.ProcessorDefinition.addRoutes(ProcessorDefinition.java:219) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.model.RouteDefinition.addRoutes(RouteDefinition.java:1069) ~[camel-core-2.17.2.jar:2.17.2]
+	... 56 common frames omitted
+
+2017-04-10 19:13:53.780  INFO 8220 --- [           main] .b.l.ClasspathLoggingApplicationListener : Application failed to start with classpath: [file:/C:/Users/normsby/Documents/NetBeansProjects/ING_ATM_Locator/target/surefire/surefirebooter5636998128895282040.jar, file:/C:/Users/normsby/.m2/repository/org/jacoco/org.jacoco.agent/0.7.5.201505241946/org.jacoco.agent-0.7.5.201505241946-runtime.jar]
+2017-04-10 19:13:53.780 ERROR 8220 --- [           main] o.s.test.context.TestContextManager      : Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@8228ad6] to prepare test instance [com.ing.meta.annotation.AuthoriseTest@2b5d64db]
+
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:124) ~[spring-test-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:83) ~[spring-test-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:189) ~[spring-test-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:131) ~[spring-test-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:230) ~[spring-test-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:228) [spring-test-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:287) [spring-test-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:289) [spring-test-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:247) [spring-test-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:94) [spring-test-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58) [junit-4.12.jar:4.12]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) [spring-test-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) [spring-test-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363) [junit-4.12.jar:4.12]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:191) [spring-test-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264) [surefire-junit4-2.14.1.jar:2.14.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153) [surefire-junit4-2.14.1.jar:2.14.1]
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124) [surefire-junit4-2.14.1.jar:2.14.1]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_121]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_121]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_121]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_121]
+	at org.apache.maven.surefire.util.ReflectionUtils.invokeMethodWithArray2(ReflectionUtils.java:208) [surefire-api-2.14.1.jar:2.14.1]
+	at org.apache.maven.surefire.booter.ProviderFactory$ProviderProxy.invoke(ProviderFactory.java:159) [surefire-booter-2.14.1.jar:2.14.1]
+	at org.apache.maven.surefire.booter.ProviderFactory.invokeProvider(ProviderFactory.java:87) [surefire-booter-2.14.1.jar:2.14.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153) [surefire-booter-2.14.1.jar:2.14.1]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:95) [surefire-booter-2.14.1.jar:2.14.1]
+Caused by: org.apache.camel.spring.boot.CamelSpringBootInitializationException: org.apache.camel.FailedToCreateRouteException: Failed to create route route120 at: >>> Choice[[When[{header{action} == all} -> [To[GetAllATMs]]], When[{header{action} == inCity} -> [To[GetAllATMsInCity]]]]] <<< in route: Route(route120)[[From[direct:call]] -> [SetBody[{null}], Cho... because of No endpoint could be found for: GetAllATMs, please check your classpath contains the needed Camel component jar.
+	at org.apache.camel.spring.boot.RoutesCollector.onApplicationEvent(RoutesCollector.java:126) ~[camel-spring-boot-2.17.0.jar:2.17.0]
+	at org.apache.camel.spring.boot.RoutesCollector.onApplicationEvent(RoutesCollector.java:41) ~[camel-spring-boot-2.17.0.jar:2.17.0]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:166) ~[spring-context-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:138) ~[spring-context-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:383) ~[spring-context-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:337) ~[spring-context-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:882) ~[spring-context-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:545) ~[spring-context-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:766) ~[spring-boot-1.3.3.RELEASE.jar:1.3.3.RELEASE]
+	at org.springframework.boot.SpringApplication.createAndRefreshContext(SpringApplication.java:361) ~[spring-boot-1.3.3.RELEASE.jar:1.3.3.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) ~[spring-boot-1.3.3.RELEASE.jar:1.3.3.RELEASE]
+	at org.springframework.boot.test.SpringApplicationContextLoader.loadContext(SpringApplicationContextLoader.java:98) ~[spring-boot-1.3.3.RELEASE.jar:1.3.3.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:98) ~[spring-test-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:116) ~[spring-test-4.3.4.RELEASE.jar:4.3.4.RELEASE]
+	... 31 common frames omitted
+Caused by: org.apache.camel.FailedToCreateRouteException: Failed to create route route120 at: >>> Choice[[When[{header{action} == all} -> [To[GetAllATMs]]], When[{header{action} == inCity} -> [To[GetAllATMsInCity]]]]] <<< in route: Route(route120)[[From[direct:call]] -> [SetBody[{null}], Cho... because of No endpoint could be found for: GetAllATMs, please check your classpath contains the needed Camel component jar.
+	at org.apache.camel.model.RouteDefinition.addRoutes(RouteDefinition.java:1072) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.model.RouteDefinition.addRoutes(RouteDefinition.java:196) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.impl.DefaultCamelContext.startRoute(DefaultCamelContext.java:974) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.impl.DefaultCamelContext.startRouteDefinitions(DefaultCamelContext.java:3301) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.impl.DefaultCamelContext.doStartCamel(DefaultCamelContext.java:3024) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.impl.DefaultCamelContext.access$000(DefaultCamelContext.java:175) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.impl.DefaultCamelContext$2.call(DefaultCamelContext.java:2854) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.impl.DefaultCamelContext$2.call(DefaultCamelContext.java:2850) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.impl.DefaultCamelContext.doWithDefinedClassLoader(DefaultCamelContext.java:2873) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.impl.DefaultCamelContext.doStart(DefaultCamelContext.java:2850) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.support.ServiceSupport.start(ServiceSupport.java:61) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.impl.DefaultCamelContext.start(DefaultCamelContext.java:2819) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.spring.boot.RoutesCollector.onApplicationEvent(RoutesCollector.java:116) ~[camel-spring-boot-2.17.0.jar:2.17.0]
+	... 44 common frames omitted
+Caused by: org.apache.camel.NoSuchEndpointException: No endpoint could be found for: GetAllATMs, please check your classpath contains the needed Camel component jar.
+	at org.apache.camel.util.CamelContextHelper.getMandatoryEndpoint(CamelContextHelper.java:81) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.model.RouteDefinition.resolveEndpoint(RouteDefinition.java:211) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.impl.DefaultRouteContext.resolveEndpoint(DefaultRouteContext.java:107) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.impl.DefaultRouteContext.resolveEndpoint(DefaultRouteContext.java:113) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.model.SendDefinition.resolveEndpoint(SendDefinition.java:62) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.model.SendDefinition.createProcessor(SendDefinition.java:56) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.model.ProcessorDefinition.createProcessor(ProcessorDefinition.java:483) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.model.ProcessorDefinition.createOutputsProcessorImpl(ProcessorDefinition.java:446) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.model.ProcessorDefinition.createOutputsProcessor(ProcessorDefinition.java:413) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.model.ProcessorDefinition.createOutputsProcessor(ProcessorDefinition.java:165) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.model.ExpressionNode.createFilterProcessor(ExpressionNode.java:109) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.model.WhenDefinition.createProcessor(WhenDefinition.java:74) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.model.WhenDefinition.createProcessor(WhenDefinition.java:32) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.model.ProcessorDefinition.createProcessor(ProcessorDefinition.java:483) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.model.ChoiceDefinition.createProcessor(ChoiceDefinition.java:135) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.model.ProcessorDefinition.makeProcessorImpl(ProcessorDefinition.java:534) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.model.ProcessorDefinition.makeProcessor(ProcessorDefinition.java:495) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.model.ProcessorDefinition.addRoutes(ProcessorDefinition.java:219) ~[camel-core-2.17.2.jar:2.17.2]
+	at org.apache.camel.model.RouteDefinition.addRoutes(RouteDefinition.java:1069) ~[camel-core-2.17.2.jar:2.17.2]
+	... 56 common frames omitted
+
+]]></system-out>
+  </testcase>
+</testsuite>

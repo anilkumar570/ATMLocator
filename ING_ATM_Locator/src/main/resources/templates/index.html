@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	layout:decorator="layouts/main">
+<head>
+	<title>ING ATM Locator</title>
+</head>
+<body th:with="home=${true}">
+
+ 	<div layout:fragment="content">
+	 	<h1>Login To Lookup ATMs Near You</h1>	 	
+		
+		<div class="list-group">                  
+		  <a href="/login" th:href="@{/login}" class="list-group-item">
+		    <h4 class="list-group-item-heading">Login</h4>
+		  </a>		  
+		</div> 
+	</div>
+</body>
+</html>
